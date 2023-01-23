@@ -1,5 +1,5 @@
 {% set name = "rubicon-objc" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-objc-{{ version }}.tar.gz
-  sha256: 380723b5838d5ea869ef15789cc4ae7f0aa28eb6c6e1a5f11a09a6726f37651d
+  sha256: f6496d8cbebcd689301e66b719335856d72e106e57f8a66ac97c228b860f4958
 
 build:
   noarch: python
