@@ -1,11 +1,11 @@
-About rubicon-objc
-==================
+About rubicon-objc-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubicon-objc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://beeware.org/rubicon
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubicon-objc-feedstock/blob/main/LICENSE.txt)
 
 Summary: A bridge between an Objective C runtime environment and Python.
 
