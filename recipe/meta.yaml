@@ -13,7 +13,7 @@ build:
   noarch: python
   script:
     # burn in the version so that pip can list it correctly
-    - sed -i .bak "3i version = {{ version }}" setup.cfg
+    - sed -i.bak "3i version = {{ version }}" setup.cfg
     - {{ PYTHON }} -m pip install . -vv
   number: 1
 
