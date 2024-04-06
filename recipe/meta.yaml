@@ -13,7 +13,7 @@ build:
   noarch: python
   script:
     # burn in the version so that pip can list it correctly
-    - sed -i.bak "3i version = {{ version }}" setup.cfg
+    # - sed -i.bak "3i version = {{ version }}" setup.cfg
     - {{ PYTHON }} -m pip install . -vv
   number: 0
 
@@ -21,8 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools # ==69.2.0
-    - wheel >=0.32.0
+    - setuptools ==69.2.0
     - setuptools-scm ==8.0.4
 
   run:
