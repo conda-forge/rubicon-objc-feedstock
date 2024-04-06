@@ -1,5 +1,5 @@
 {% set name = "rubicon-objc" %}
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,31 +7,28 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-objc-{{ version }}.tar.gz
-  sha256: be937d864bd1229f860defabb89b40c53634eedc36448d89ad3c14eb3286e509
+  sha256: f7bede0f0e73dde07083785984c75b3acf76116298743758ea5c51b3ebb81978
 
 build:
   noarch: python
   script:
-    # burn in the version so that pip can list it correctly
-    - sed -i.bak "3i version = {{ version }}" setup.cfg
     - {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
     - pip
-    - python >=3.5
-    - setuptools >=46.4.0
-    - wheel >=0.32.0
+    - python >=3.8
+    - setuptools ==69.2.0
+    - setuptools-scm ==8.0.4
   run:
-    - python >=3.5
+    - python >=3.8
 
 test:
   imports:
     - rubicon
   commands:
     - pip check
-    - pip list | grep rubicon-objc.*{{ version }}
   requires:
     - pip
 
