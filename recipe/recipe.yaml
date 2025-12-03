@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: rubicon-objc
-  version: "0.5.2"
+  version: "0.5.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 1180593935f6a8a39c23b5f4b7baa24aedf9f7285e80804a1d9d6b50a50572f5
+  sha256: 74c25920c5951a05db9d3a1aac31d23816ec7dacc841a5b124d911b99ea71b9a
 
 build:
   number: 0
